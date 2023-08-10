@@ -1,5 +1,5 @@
 const constants = {
-  apiKey: "AIzaSyCecK4luFvLmGYvG8PW9cQ3EVlMyKlYwzI",
+  apiKey: "AIzaSyDpTLx2Kbzd98cnTQugY5HWxD2PfZU2dps",
 };
 
 export { constants };
