@@ -1,8 +1,9 @@
 .map {
-  max-width: 255px;
-  max-height: 253px;
+  max-width: 506px;
+  max-height: 475px;
   margin-left: 78px;
-  border: solid 1px #c2c2c2;
+  color: #000000;
+  border: solid 3px #000000;
   box-shadow: (0 4px 4px rgb(0 0 0 / 0.6));
-  background-color: #FFDDD2;
+  background-color: #797574;
 }
