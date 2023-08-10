@@ -1,21 +1,15 @@
 import logo from "../../images/logo.svg";
 import "./App.css";
-import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Main from "../Main/Main";
+import Home from "../Home/Home";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Waste Not Want Not</p>
-      </header>
-      <Header />
+      <Home />
       <Main />
       <Footer />
     </div>
   );
 }
-
-export default App;
