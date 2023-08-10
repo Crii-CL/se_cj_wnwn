@@ -14,9 +14,12 @@
 .header__container-title {
   font-size: 68px;
   line-height: 1.2;
+  color: #066D77;
+  ;
 }
 
 .header__container-description {
   font-size: 32px;
   line-height: 1.2;
+  color: #83C5BE;
 }
