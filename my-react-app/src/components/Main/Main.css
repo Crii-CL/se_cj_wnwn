@@ -2,12 +2,12 @@
   background-color: #edf6f9;
 }
 .page_content {
-  max-height: 852px;
+  max-height: 872px;
   max-width: 579px;
   display: flex;
   justify-content: space-between;
-  border: solid 1px #c2c2c2;
+  border: solid 8px #E29578;
   border-radius: 65px;
   box-shadow: (0 4px 4px rgb(0 0 0 / 0.6));
-  background-color: #edf6f9;
+  background-color: #c2c2c2;
 }
