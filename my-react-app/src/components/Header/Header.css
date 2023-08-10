@@ -1,0 +1,22 @@
+.header {
+  /* fonts go here */
+}
+
+.header__logo {
+  max-height: 120px;
+}
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__container-title {
+  font-size: 68px;
+  line-height: 1.2;
+}
+
+.header__container-description {
+  font-size: 32px;
+  line-height: 1.2;
+}

@@ -5,7 +5,7 @@ import Map from "../Map/Map";
 
 const Main = () => {
   return (
-    <div>
+    <div class="page_content">
       <SideBar />
       <Map />
     </div>
