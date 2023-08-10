@@ -4,7 +4,7 @@ import React from "react";
 
 const Map = () => {
   return (
-    <div className="">
+    <div className="map">
       <iframe
         width="600"
         height="450"
