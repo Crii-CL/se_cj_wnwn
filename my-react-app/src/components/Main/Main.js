@@ -5,10 +5,12 @@ import Map from "../Map/Map";
 
 const Main = () => {
   return (
-    <div class="page_content">
-      <SideBar />
-      <Map />
-    </div>
+    <section className="main">
+      <div className="page_content">
+        <SideBar />
+        <Map />
+      </div>
+    </section>
   );
 };
 
