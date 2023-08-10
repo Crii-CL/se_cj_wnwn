@@ -1,13 +1,18 @@
+import logo from "../../images/logo.svg";
 import "./Header.css";
 import React from "react";
 
 const Header = () => {
   return (
-    <div class="header">
-      <img class="header__logo" src="" alt="Waste Not Want Not logo"></img>
-      <div class="header__container">
-        <h1 class="header__container-title">Waste Not Want Not</h1>
-        <p class="header__container-desciption">
+    <div className="header">
+      <img
+        className="header__logo"
+        src={logo}
+        alt="Waste Not Want Not logo"
+      ></img>
+      <div className="header__container">
+        <h1 className="header__container-title">Waste Not Want Not</h1>
+        <p className="header__container-desciption">
           find the local eWaste disposal sites near you
         </p>
       </div>

@@ -2,7 +2,7 @@ import "./Map.css";
 import React from "react";
 
 const Map = () => {
-  return <div></div>;
+  return <div className="map"></div>;
 };
 
 export default Map;
