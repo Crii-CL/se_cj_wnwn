@@ -1,0 +1,8 @@
+.page_content {
+  max-height: 852px;
+  max-width: 579px;
+  display: flex;
+  border: solid 1px #c2c2c2;
+  border-radius: 65px;
+  box-shadow: (0 4px 4px rgb(0 0 0 / 0.6));
+}
