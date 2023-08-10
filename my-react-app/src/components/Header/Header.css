@@ -14,6 +14,7 @@
 .header__container-title {
   font-size: 68px;
   line-height: 1.2;
+  margin: 0;
 }
 
 .header__container-description {
