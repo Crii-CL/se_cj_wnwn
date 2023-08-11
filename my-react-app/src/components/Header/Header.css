@@ -1,5 +1,5 @@
 .header {
-  margin: 0 45px 0;
+  margin: 0 15px 0;
 }
 
 .header__logo {
@@ -11,17 +11,48 @@
 .header__container {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .header__container-title {
-  font-size: 68px;
+  font-size: 44px;
   line-height: 1.2;
   margin: 0;
   color: #066d77;
+  font-family: "Michroma", sans-serif;
 }
 
 .header__container-description {
-  font-size: 32px;
+  font-size: 24px;
   line-height: 1.2;
   color: #83c5be;
+  font-family: "Michroma", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin: 0 5px 0;
+  }
+
+  .header__container-title {
+    font-size: 30px;
+  }
+
+  .header__container-description {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    margin: 0;
+  }
+
+  .header__logo {
+    max-height: 80px;
+  }
+
+  .header__container-title {
+    font-size: 20px;
+  }
 }
