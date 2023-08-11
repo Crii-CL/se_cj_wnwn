@@ -6,8 +6,8 @@ const Map = () => {
   return (
     <div className="map">
       <iframe
-        width="600"
-        height="450"
+        width="350"
+        height="350"
         loading="lazy"
         allowFullScreen
         referrerPolicy="no-referrer-when-downgrade"
