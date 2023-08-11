@@ -1,23 +1,17 @@
-.header {
-  margin: 0 45px 0;
-}
-
 .header__logo {
-  display: flex;
   max-height: 120px;
-  align-items: flex-start;
 }
 
 .header__container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .header__container-title {
-  font-size: 68px;
+  font-size: 64px;
   line-height: 1.2;
   margin: 0;
-  color: #066d77;
+  color: #066D77;
 }
 
 .header__container-description {
