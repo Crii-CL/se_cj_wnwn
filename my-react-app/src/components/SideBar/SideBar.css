@@ -5,3 +5,19 @@
   line-height: 1.2;
   color: #ffffff;
 }
+
+.sidebar__container {
+  width: 550px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.site_name {
+  font-size: 24px;
+}
+
+.site_address {
+  font-size: 20px;
+}
