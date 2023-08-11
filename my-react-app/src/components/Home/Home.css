@@ -1,7 +1,14 @@
-.home__logo {
+.home__search {
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  height: 30px;
+  width: 500px;
+  text-align: center;
+  font-size: 20px;
 }
 
-.home__logo-img {
+.home__logo {
   height: 25vmin;
   pointer-events: none;
 }
