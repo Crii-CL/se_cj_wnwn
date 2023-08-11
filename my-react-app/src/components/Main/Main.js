@@ -7,8 +7,8 @@ import Header from "../Header/Header";
 const Main = () => {
   return (
     <>
-      <Header />
       <section className="main">
+        <Header />
         <div className="page_content">
           <SideBar />
           <Map />
