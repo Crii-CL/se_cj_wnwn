@@ -1,5 +1,5 @@
 .main {
-  background-color: #edf6f9;
+  background-color: whitesmoke;
   margin: 0 45px 0;
   padding-bottom: 50px;
 }
@@ -10,11 +10,11 @@
   max-width: 100%;
   display: flex;
   justify-content: space-between;
-  border: solid 8px #f4a261;
+  border: solid 4px #ffddd2;
   border-radius: 65px;
-  background-color: #c2c2c2;
+  background-color: linen;
   overflow: hidden;
-  margin-top: 45px;
+  margin: 24px 12px 0;
 }
 
 @media screen and (max-width: 768px) {
