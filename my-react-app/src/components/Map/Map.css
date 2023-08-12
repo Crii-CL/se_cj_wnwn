@@ -4,6 +4,7 @@
   width: 30rem;
   height: 25rem;
   border: 5px inset;
+  border-radius: 25px;
   align-items: center;
   justify-content: center;
 }
