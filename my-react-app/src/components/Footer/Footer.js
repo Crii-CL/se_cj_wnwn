@@ -8,7 +8,7 @@ const Footer = () => {
         <span>Developed by </span>
       </div>
       <div className="footer__names">
-        <span>Christopher Campos Lopez </span>
+        <span>Cristopher Campos Lopez </span>
         <span>Eddie Mendez</span>
         <span>Nathaniel Kelly </span>
         <span>Jerry Jackson</span>

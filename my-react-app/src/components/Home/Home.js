@@ -1,14 +1,21 @@
 import logo from "../../images/logo.svg";
 import "./Home.css";
 import React from "react";
-// import { Link } from "react-router-dom";
 
-export default function Home() {
-  const placeholderTexts = [
-    "Enter Address",
-    "Where's your city",
-    "Enter ZipCode",
-  ];
+const Home = (props) => {
+  const setLocation = () => {
+    const input = document.querySelector("#search-bar");
+    if (input.value.length > 0) {
+      props.setIsLocated(true);
+      props.handleScroll("main");
+    }
+  };
+
+  const handleEnter = (e) => {
+    if (e.key === "Enter") {
+      setLocation();
+    }
+  };
 
   return (
     <div className="home">
@@ -18,17 +25,19 @@ export default function Home() {
         </div>
         <p className="home__caption">Waste Not Want Not</p>
         <input
-          type="email"
-          placeholder="Enter Email Address"
+          id="search-bar"
+          type="text"
+          placeholder="Enter Address"
           className="home__search"
+          onKeyDown={handleEnter}
           required
         />
-        {/* <Link className="home__link" to="/home"> */}
-        <button type="button" className="home__submit">
+        <button type="button" onClick={setLocation} className="home__submit">
           Enter
         </button>
-        {/* </Link> */}
       </div>
     </div>
   );
-}
+};
+
+export default Home;
