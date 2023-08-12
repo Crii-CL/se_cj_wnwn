@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 
 const Map = ({ address }) => {
   const [src, setSrc] = useState("");
+  const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
     const geocoderUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
@@ -18,26 +19,41 @@ const Map = ({ address }) => {
           const latitude = location.lat;
           const longitude = location.lng;
 
-          const embedUrl = `https://www.google.com/maps/embed/v1/search?q=ewaste+recycling&center=${latitude},${longitude}&key=${constants.apiKey}`;
+          const embedUrl = `https://www.google.com/maps/embed/v1/search?q=ewaste+recycling+${encodeURIComponent(
+            address
+          )}&key=${constants.apiKey}`;
 
           setSrc(embedUrl);
+          setNotFound(false);
+        } else if (data.results && data.results.length === 0) {
+          setNotFound(true);
         }
       })
       .catch((err) => {
         console.error("Requested resource not found", err);
       });
-  }, []);
+  }, [address]);
 
   return (
-    <iframe
-      id="map"
-      className="map"
-      loading="lazy"
-      allowFullScreen
-      referrerPolicy="no-referrer-when-downgrade"
-      src={src}
-      title="Map"
-    ></iframe>
+    <>
+      {!notFound ? (
+        <iframe
+          id="map"
+          className="map__iframe"
+          loading="lazy"
+          allowFullScreen
+          referrerPolicy="no-referrer-when-downgrade"
+          src={src}
+          title="Map"
+        ></iframe>
+      ) : (
+        <div id="map__not-found" className="map__iframe">
+          <p className="map__not-found-text">
+            Couldn't quite pin down your location :/
+          </p>
+        </div>
+      )}
+    </>
   );
 };
 

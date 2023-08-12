@@ -1,67 +1,102 @@
 .sidebar__container {
-  height: 540px;
-  margin: 25px 25px 25px 0px;
-  padding-left: 25px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   text-align: left;
   gap: 15px;
+  line-height: 1.3;
 }
-.site__business-name {
+
+.sidebar__site-business-name {
+  margin: 0;
   font-size: 18px;
   font-family: "Michroma", sans-serif;
-  line-height: 1.2;
-  margin-block-start: 0;
-  margin-block-end: 0;
 }
 
-.site__address {
+.sidebar__site-address {
+  margin: 0;
   font-size: 14px;
   font-family: "Michroma", sans-serif;
 }
-.site__address_street {
-  line-height: 1.2;
-  margin-block-start: 0;
-  margin-block-end: 0;
+
+.sidebar__site-address-street {
+  margin: 0;
 }
 
-.site__address_unit{
-  line-height: 1.2;
-  margin-block-start: 0;
-  margin-block-end: 0;
+.sidebar__site-address-unit {
+  margin: 0;
 }
 
-.site__address_city-state-zip {
-  line-height: 1.2;
-  margin-block-start: 0;
-  margin-block-end: 0;
+.sidebar__site-address-city-state-zip {
+  margin: 0;
 }
 
-.site__hours {
-  line-height: 1.2;
-  margin-block-start: 0;
-  margin-block-end: 0;
+.sidebar__site-hours {
+  margin: 0;
   font-size: 14px;
   font-family: "Michroma", sans-serif;
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (max-width: 800px) {
   .sidebar__container {
-    width: 750px;
-    height: 300px;
+    width: 250px;
+    height: 150px;
+  }
+
+  .sidebar__site-business-name {
+    font-size: 16px;
+  }
+
+  .sidebar__site-address {
+    font-size: 12px;
+  }
+
+  .sidebar__site-hours {
+    font-size: 12px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .sidebar__container {
-    width: 300px;
-    height: 300px;
+    height: 250px;
+    flex-flow: column wrap;
+    align-content: center;
+    text-align: center;
+    justify-content: space-evenly;
   }
-}
 
-@media screen and (max-width: 425px) {
-  .sidebar__container {
-    width: 50px;
-    height: 300px;
+  .sidebar__site-business-name {
+    font-size: 16px;
+  }
+
+  .sidebar__site-address {
+    font-size: 12px;
+  }
+
+  .sidebar__site-hours {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .sidebar__container {
+      width: 100px;
+      height: 250px;
+      flex-flow: column wrap;
+      align-content: center;
+      text-align: center;
+      justify-content: space-between;
+    }
+
+    .sidebar__site-business-name {
+      font-size: 12px;
+    }
+
+    .sidebar__site-address {
+      font-size: 10px;
+    }
+
+    .sidebar__site-hours {
+      font-size: 10px;
+    }
   }
 }

@@ -9,9 +9,13 @@ const Main = ({ address }) => {
     <>
       <section id="main" className="main">
         <Header />
-        <div className="page__content">
-          <SideBar />
-          <Map address={address} />
+        <div className="main__content">
+          <div className="main__sidebar">
+            <SideBar />
+          </div>
+          <div className="main__map">
+            <Map address={address} />
+          </div>
         </div>
       </section>
     </>

@@ -1,16 +1,16 @@
 .home__search {
   outline: none;
   border: none;
-  border-radius: 2px;
+  border-radius: 20px;
   height: 30px;
   width: 500px;
   text-align: center;
   font-size: 20px;
   font-family: "Michroma", sans-serif;
+  background-color: whitesmoke;
 }
 
 .home__logo {
-  height: 25vmin;
   pointer-events: none;
 }
 
@@ -66,7 +66,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .home__logo {
     height: 20vmin;
   }

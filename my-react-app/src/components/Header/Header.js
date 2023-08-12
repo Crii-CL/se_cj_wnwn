@@ -12,7 +12,7 @@ export default function Header() {
       <div className="header__container">
         <h1 className="header__container-title">Waste Not Want Not</h1>
         <p className="header__container-description">
-          Find the local eWaste disposal sites near you
+          Find local eWaste disposal sites near you
         </p>
       </div>
     </div>

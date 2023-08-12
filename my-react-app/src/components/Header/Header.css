@@ -3,9 +3,8 @@
 }
 
 .header__logo {
-  display: flex;
   max-height: 120px;
-  align-items: flex-start;
+  margin-bottom: 20px;
 }
 
 .header__container {
@@ -32,7 +31,7 @@
   font-family: "Michroma", sans-serif;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .header {
     margin: 0 5px 0;
   }
@@ -46,13 +45,9 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
   .header {
     margin: 0;
-  }
-
-  .header__logo {
-    max-height: 80px;
   }
 
   .header__container-title {
