@@ -3,7 +3,7 @@
   margin: 0 45px 0;
 }
 
-.page_content {
+.page__content {
   max-height: 500px;
   max-width: 100%;
   display: flex;
