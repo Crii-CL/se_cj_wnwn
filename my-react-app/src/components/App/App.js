@@ -7,6 +7,7 @@ import { useState } from "react";
 
 export default function App() {
   const [isLocated, setIsLocated] = useState(false);
+  const [address, setAddress] = useState("");
 
   const handleScroll = (elementId) => {
     setIsLocated(true);
@@ -24,10 +25,14 @@ export default function App() {
 
   return (
     <div className="App">
-      <Home setIsLocated={setIsLocated} handleScroll={handleScroll} />
+      <Home
+        setIsLocated={setIsLocated}
+        handleScroll={handleScroll}
+        setAddress={setAddress}
+      />
       {isLocated && (
         <>
-          <Main />
+          <Main address={address} />
           <Footer />
         </>
       )}

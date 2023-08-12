@@ -30,6 +30,9 @@ const Home = (props) => {
           placeholder="Enter Address"
           className="home__search"
           onKeyDown={handleEnter}
+          onChange={(e) => {
+            props.setAddress(e.target.value);
+          }}
           required
         />
         <button type="button" onClick={setLocation} className="home__submit">
