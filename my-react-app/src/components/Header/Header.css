@@ -1,17 +1,26 @@
+.header {
+  margin: 0 15px 0;
+}
+
 .header__logo {
+  display: flex;
   max-height: 120px;
+  align-items: flex-start;
 }
 
 .header__container {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
   flex-direction: column;
 }
 
 .header__container-title {
-  font-size: 64px;
+  font-size: 44px;
   line-height: 1.2;
   margin: 0;
-  color: #066D77;
+  color: #066d77;
+  font-family: "Michroma", sans-serif;
 }
 
 .header__container-description {
