@@ -24,6 +24,8 @@
 }
 
 .header__container-description {
+  margin-top: 12px;
+  margin-bottom: 0;
   font-size: 24px;
   line-height: 1.2;
   color: #83c5be;
