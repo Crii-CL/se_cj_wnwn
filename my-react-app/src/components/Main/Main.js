@@ -7,7 +7,7 @@ import Header from "../Header/Header";
 const Main = () => {
   return (
     <>
-      <section className="main">
+      <section id="main" className="main">
         <Header />
         <div className="page_content">
           <SideBar />

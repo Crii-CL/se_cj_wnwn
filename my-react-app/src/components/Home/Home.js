@@ -2,12 +2,20 @@ import logo from "../../images/logo.svg";
 import "./Home.css";
 import React from "react";
 
-export default function Home() {
-  const placeholderTexts = [
-    "Enter Address",
-    "Where's your city",
-    "Enter ZipCode",
-  ];
+const Home = (props) => {
+  const setLocation = () => {
+    const input = document.querySelector("#search-bar");
+    if (input.value.length > 0) {
+      props.setIsLocated(true);
+      props.handleScroll("main");
+    }
+  };
+
+  const handleEnter = (e) => {
+    if (e.key === "Enter") {
+      setLocation();
+    }
+  };
 
   return (
     <div className="home">
@@ -17,11 +25,19 @@ export default function Home() {
         </div>
         <p className="home__caption">Waste Not Want Not</p>
         <input
+          id="search-bar"
           type="text"
           placeholder="Enter Address"
           className="home__search"
+          onKeyDown={handleEnter}
+          required
         />
+        <button type="button" onClick={setLocation} className="home__submit">
+          Enter
+        </button>
       </div>
     </div>
   );
-}
+};
+
+export default Home;
