@@ -15,6 +15,12 @@
   font-size: 20px;
   font-family: "Michroma", sans-serif;
 }
+@media screen and (min-width: 768px) {
+  .sidebar__container {
+    width: 750px;
+    height: 300px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .sidebar__container {
@@ -23,7 +29,7 @@
   }
 }
 
-@media screen and (max-width: 425) {
+@media screen and (max-width: 425px) {
   .sidebar__container {
     width: 50px;
     height: 300px;
