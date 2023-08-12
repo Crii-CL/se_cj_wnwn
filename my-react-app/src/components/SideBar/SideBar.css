@@ -39,8 +39,11 @@
 
 @media screen and (max-width: 800px) {
   .sidebar__container {
-    width: 250px;
-    height: 150px;
+    height: 250px;
+    flex-flow: column wrap;
+    align-content: center;
+    text-align: center;
+    justify-content: space-evenly;
   }
 
   .sidebar__site-business-name {

@@ -39,6 +39,11 @@
     width: 15rem;
     height: 15rem;
   }
+
+  .map__not-found-text {
+    margin: 0;
+    font-size: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -51,16 +56,15 @@
     margin: 0;
     font-size: 100%;
   }
+}
+@media screen and (max-width: 500px) {
+  .map__iframe {
+    width: 10rem;
+    height: 10rem;
+  }
 
-  @media screen and (max-width: 500px) {
-    .map__iframe {
-      width: 10rem;
-      height: 10rem;
-    }
-
-    .map__not-found-text {
-      margin: 0;
-      font-size: 85%;
-    }
+  .map__not-found-text {
+    margin: 0;
+    font-size: 85%;
   }
 }
