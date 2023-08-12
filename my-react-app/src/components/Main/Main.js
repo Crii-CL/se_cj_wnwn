@@ -9,7 +9,7 @@ const Main = () => {
     <>
       <section id="main" className="main">
         <Header />
-        <div className="page_content">
+        <div className="page__content">
           <SideBar />
           <Map />
         </div>
