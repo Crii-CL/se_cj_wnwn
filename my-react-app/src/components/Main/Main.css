@@ -5,6 +5,7 @@
 
 .page_content {
   max-height: 872px;
+  min-height: 500px;
   max-width: 100%;
   display: flex;
   justify-content: space-between;
