@@ -1,14 +1,16 @@
 .main {
   background-color: whitesmoke;
   margin: 0 45px 0;
+  padding-bottom: 50px;
 }
 
 .page__content {
-  max-height: 500px;
+  max-height: 872px;
+  min-height: 500px;
   max-width: 100%;
   display: flex;
   justify-content: space-between;
-  border: solid 4px #FFDDD2;
+  border: solid 4px #ffddd2;
   border-radius: 65px;
   background-color: linen;
   overflow: hidden;
@@ -28,9 +30,13 @@
 @media screen and (max-width: 425px) {
   .main {
     margin: 0 15px 0;
+    padding-bottom: 30px;
   }
 
   .page__content {
     margin-top: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 }
