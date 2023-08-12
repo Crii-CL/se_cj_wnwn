@@ -42,6 +42,11 @@
   width: 130px;
 }
 
+.home__submit:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .home__logo {
     animation: home__logo-spin infinite 10s linear;
