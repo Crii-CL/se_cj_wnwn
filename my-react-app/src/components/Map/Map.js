@@ -29,17 +29,15 @@ const Map = ({ address }) => {
   }, []);
 
   return (
-    <div className="map">
-      <iframe
-        id="map"
-        width="350"
-        height="350"
-        loading="lazy"
-        allowFullScreen
-        referrerPolicy="no-referrer-when-downgrade"
-        src={src}
-      ></iframe>
-    </div>
+    <iframe
+      id="map"
+      className="map"
+      loading="lazy"
+      allowFullScreen
+      referrerPolicy="no-referrer-when-downgrade"
+      src={src}
+      title="Map"
+    ></iframe>
   );
 };
 

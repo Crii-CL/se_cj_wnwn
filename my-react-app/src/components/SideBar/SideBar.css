@@ -1,19 +1,55 @@
 .sidebar__container {
-  width: 500px;
-  height: 300px;
+  height: 540px;
+  margin: 25px 25px 25px 0px;
+  padding-left: 25px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  text-align: left;
   gap: 15px;
 }
-.site_name {
-  font-size: 24px;
+.site__business-name {
+  font-size: 18px;
   font-family: "Michroma", sans-serif;
+  line-height: 1.2;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-.site_address {
-  font-size: 20px;
+.site__address {
+  font-size: 14px;
   font-family: "Michroma", sans-serif;
+}
+.site__address_street {
+  line-height: 1.2;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.site__address_unit{
+  line-height: 1.2;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.site__address_city-state-zip {
+  line-height: 1.2;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.site__hours {
+  line-height: 1.2;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 14px;
+  font-family: "Michroma", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .sidebar__container {
+    width: 750px;
+    height: 300px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -23,7 +59,7 @@
   }
 }
 
-@media screen and (max-width: 425) {
+@media screen and (max-width: 425px) {
   .sidebar__container {
     width: 50px;
     height: 300px;
