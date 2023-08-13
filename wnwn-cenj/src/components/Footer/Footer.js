@@ -13,7 +13,7 @@ const Footer = () => {
         <span>Nathaniel Kelly </span>
         <span>Jerry Jackson</span>
       </div>
-      <div> &#x24B8; 2023</div>
+      <div className="footer__names"> &#x24B8; 2023</div>
     </footer>
   );
 };

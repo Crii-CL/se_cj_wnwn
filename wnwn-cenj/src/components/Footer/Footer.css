@@ -1,8 +1,8 @@
 .footer {
   height: 175px;
-  padding: 0px 45px;
   background-color: #edf6f9;
   font-family: "Michroma", sans-serif;
+  font-size: 2vw;
 }
 
 .footer__names {
@@ -24,16 +24,4 @@
   gap: 3px;
   font-style: bold;
   font-weight: 600;
-}
-
-@media screen and (max-width: 800px) {
-  .footer {
-    margin: 0 25px 0;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .footer {
-    margin: 0 15px 0;
-  }
 }

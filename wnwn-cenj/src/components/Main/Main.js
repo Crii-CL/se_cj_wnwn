@@ -8,7 +8,7 @@ const Main = (props) => {
   return (
     <>
       <section id="main" className="main">
-        <Header />
+        <Header address={props.address} />
         <div className="main__map">
           <Map
             address={props.address}

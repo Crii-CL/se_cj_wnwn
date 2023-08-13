@@ -1,6 +1,6 @@
 .header__logo {
   margin-bottom: 10px;
-  width: 10vw;
+  width: 12vw;
 }
 
 .header__container {
@@ -10,7 +10,7 @@
 
 .header__container-title {
   /* font-size: 44px; */
-  font-size: 3vw;
+  font-size: 5vw;
   margin: 0;
   color: #066d77;
   font-family: "Michroma", sans-serif;
@@ -18,32 +18,22 @@
 
 .header__container-description {
   margin: 5px 0 10px 0;
-  font-size: 2vw;
+  font-size: 4vw;
   /* font-size: 24px; */
   color: #83c5be;
   font-family: "Michroma", sans-serif;
 }
 
-/* @media screen and (max-width: 800px) {
-  .header {
-    margin: 0 5px 0;
+@media screen and (min-width: 800px) {
+  .header__logo {
+    width: 10vw;
   }
 
   .header__container-title {
-    font-size: 30px;
+    font-size: 3vw;
   }
 
   .header__container-description {
-    font-size: 18px;
+    font-size: 2vw;
   }
 }
-
-@media screen and (max-width: 500px) {
-  .header {
-    margin: 0;
-  }
-
-  .header__container-title {
-    font-size: 20px;
-  }
-} */
