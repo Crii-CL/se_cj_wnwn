@@ -41,7 +41,6 @@ export default function App() {
             notFound={notFound}
             setNotFound={setNotFound}
           />
-          <Footer />
         </>
       )}
     </div>

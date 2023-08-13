@@ -1,31 +1,19 @@
 .main {
+  display: flex;
+  flex-flow: column wrap;
+  /* max-width: 100%; */
   background-color: whitesmoke;
-  /* margin: 0 45px 0; */
-  padding: 50px 20px;
-}
-
-.main__content {
   box-sizing: border-box;
-  height: 550px;
-  display: flex;
-  align-items: center;
-  margin-top: 24px;
-  justify-content: space-evenly;
-  border-radius: 65px;
-}
-
-.main__sidebar {
-  display: flex;
-  align-items: center;
+  padding: 50px 20px 0 20px;
+  margin: 0;
 }
 
 .main__map {
-  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 800px) {
   .main {
-    margin: 0 15px 0;
     padding-bottom: 30px;
   }
 
