@@ -1,20 +1,20 @@
 import "./Main.css";
 import React from "react";
 import SideBar from "../SideBar/SideBar";
-import Map from "../Map/Map";
+import MapComponent from "../Map/Map";
 import Header from "../Header/Header";
 
-const Main = ({ address }) => {
+const Main = (props) => {
   return (
     <>
       <section id="main" className="main">
         <Header />
         <div className="main__content">
           <div className="main__sidebar">
-            <SideBar />
+            <SideBar pin={props.pin} />
           </div>
           <div className="main__map">
-            <Map address={address} />
+            <MapComponent address={props.address} setPin={props.setPin} />
           </div>
         </div>
       </section>

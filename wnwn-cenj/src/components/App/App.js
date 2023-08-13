@@ -7,6 +7,7 @@ import { useState } from "react";
 export default function App() {
   const [isLocated, setIsLocated] = useState(false);
   const [address, setAddress] = useState("");
+  const [pin, setPin] = useState("");
 
   const handleScroll = (elementId) => {
     setIsLocated(true);
@@ -28,10 +29,11 @@ export default function App() {
         setIsLocated={setIsLocated}
         handleScroll={handleScroll}
         setAddress={setAddress}
+        setPin={setPin}
       />
       {isLocated && (
         <>
-          <Main address={address} />
+          <Main address={address} pin={pin} setPin={setPin} />
           <Footer />
         </>
       )}
