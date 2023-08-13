@@ -10,11 +10,16 @@ const Main = (props) => {
       <section id="main" className="main">
         <Header />
         <div className="main__content">
-          <div className="main__sidebar">
+          {/* <div className="main__sidebar">
             <SideBar pin={props.pin} />
-          </div>
+          </div> */}
           <div className="main__map">
-            <MapComponent address={props.address} setPin={props.setPin} />
+            <MapComponent
+              address={props.address}
+              setPin={props.setPin}
+              notFound={props.notFound}
+              setNotFound={props.setNotFound}
+            />
           </div>
         </div>
       </section>

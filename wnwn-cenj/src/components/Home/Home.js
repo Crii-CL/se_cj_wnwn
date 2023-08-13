@@ -1,6 +1,6 @@
 import logo from "../../images/logo.svg";
 import "./Home.css";
-import React from "react";
+import React, { useState } from "react";
 
 const Home = (props) => {
   const setLocation = () => {

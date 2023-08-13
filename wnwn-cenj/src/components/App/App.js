@@ -8,6 +8,7 @@ export default function App() {
   const [isLocated, setIsLocated] = useState(false);
   const [address, setAddress] = useState("");
   const [pin, setPin] = useState("");
+  const [notFound, setNotFound] = useState(false);
 
   const handleScroll = (elementId) => {
     setIsLocated(true);
@@ -33,7 +34,13 @@ export default function App() {
       />
       {isLocated && (
         <>
-          <Main address={address} pin={pin} setPin={setPin} />
+          <Main
+            address={address}
+            pin={pin}
+            setPin={setPin}
+            notFound={notFound}
+            setNotFound={setNotFound}
+          />
           <Footer />
         </>
       )}

@@ -5,6 +5,8 @@
   text-align: left;
   gap: 15px;
   line-height: 1.3;
+  list-style: none;
+  padding: 0;
 }
 
 .sidebar__site-business-name {

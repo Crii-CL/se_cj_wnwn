@@ -12,8 +12,6 @@
   margin-top: 24px;
   justify-content: space-evenly;
   border-radius: 65px;
-  background-color: linen;
-  border: solid 4px #ffddd2;
 }
 
 .main__sidebar {
@@ -24,12 +22,6 @@
 .main__map {
   display: flex;
 }
-
-/* @media screen and (max-width: 800px) {
-  .main__content {
-    margin-top: 30px;
-  }
-} */
 
 @media screen and (max-width: 800px) {
   .main {
