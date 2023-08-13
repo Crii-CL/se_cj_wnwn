@@ -1,7 +1,6 @@
 .main {
   display: flex;
   flex-flow: column wrap;
-  /* max-width: 100%; */
   background-color: whitesmoke;
   box-sizing: border-box;
   padding: 50px 20px 0 20px;
@@ -10,6 +9,9 @@
 
 .main__map {
   align-items: center;
+}
+
+.main__resource-center {
 }
 
 @media screen and (max-width: 800px) {

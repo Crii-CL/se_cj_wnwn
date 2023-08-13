@@ -8,6 +8,7 @@ const Home = (props) => {
     if (input.value.length > 0) {
       props.setIsLocated(true);
       props.handleScroll("main");
+      props.setAddress(input.value);
     }
   };
 
@@ -30,9 +31,6 @@ const Home = (props) => {
           placeholder="Enter Address"
           className="home__search"
           onKeyDown={handleEnter}
-          onChange={(e) => {
-            props.setAddress(e.target.value);
-          }}
           required
         />
         <button type="button" onClick={setLocation} className="home__submit">

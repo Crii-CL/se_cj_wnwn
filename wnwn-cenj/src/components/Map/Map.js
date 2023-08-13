@@ -4,10 +4,6 @@ import React, { useState, useEffect } from "react";
 
 const Map = (props) => {
   const [src, setSrc] = useState("");
-  const containerStyle = {
-    width: "300px",
-    height: "300px",
-  };
 
   useEffect(() => {
     const geocoderUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
@@ -18,17 +14,13 @@ const Map = (props) => {
       .then((res) => res.json())
       .then((data) => {
         if (data.results && data.results.length > 0) {
-          const location = data.results[0].geometry.location;
-          const latitude = location.lat;
-          const longitude = location.lng;
-
           const embedUrl = `https://www.google.com/maps/embed/v1/search?q=ewaste+recycling+${encodeURIComponent(
             props.address
           )}&key=${constants.apiKey}`;
 
           setSrc(embedUrl);
+
           props.setNotFound(false);
-          console.log(data);
         } else if (data.results && data.results.length === 0) {
           props.setNotFound(true);
         }

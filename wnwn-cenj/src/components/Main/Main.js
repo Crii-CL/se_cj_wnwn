@@ -3,6 +3,7 @@ import React from "react";
 import Map from "../Map/Map";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import ResourceCenter from "../ResourceCenter/ResourceCenter";
 
 const Main = (props) => {
   return (
@@ -16,6 +17,9 @@ const Main = (props) => {
             notFound={props.notFound}
             setNotFound={props.setNotFound}
           />
+        </div>
+        <div className="main__resource-center">
+          <ResourceCenter></ResourceCenter>
         </div>
         <Footer />
       </section>
