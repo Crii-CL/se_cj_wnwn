@@ -21,7 +21,9 @@ const Main = (props) => {
         <div className="main__resource-center">
           <ResourceCenter></ResourceCenter>
         </div>
-        <Footer />
+        <div className="main__footer">
+          <Footer />
+        </div>
       </section>
     </>
   );

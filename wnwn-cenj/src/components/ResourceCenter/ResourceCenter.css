@@ -17,7 +17,7 @@
 }
 
 .resource {
-  height: 600px;
+  height: 800px;
   font-family: "PT Sans", sans-serif;
 }
 
@@ -25,6 +25,7 @@
   font-size: 45px;
   margin: 40px 0 40px 0;
   font-family: "Archivo Black", sans-serif;
+  color: #066d77;
 }
 
 .resource__cards {
@@ -36,8 +37,8 @@
 }
 
 .resource__card {
-  cursor: pointer;
   display: flex;
+  height: 400px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -45,10 +46,10 @@
   background-color: #c2c2c2;
   border: 2px solid #c2c2c2;
   border-radius: 30px;
-  width: calc(100% - 10px);
-  height: 400px;
+  width: 100%;
   box-sizing: border-box;
   position: relative;
+  cursor: pointer;
   background-blend-mode: darken;
   background: var(--gradient-color-1);
   transition: ease-out 0.3s;
@@ -170,6 +171,10 @@
     height: 200px;
   }
 
+  .resource__title {
+    font-size: 30px;
+  }
+
   .resource__cards {
     grid-template-columns: 1fr;
     align-items: center;
@@ -178,6 +183,10 @@
 }
 
 @media screen and (max-width: 400px) {
+  .resource__title {
+    font-size: 28px;
+  }
+
   .modal__title {
     font-size: 14px;
   }
