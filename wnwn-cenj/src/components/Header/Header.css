@@ -1,6 +1,6 @@
 .header__logo {
   margin-bottom: 10px;
-  width: 12vw;
+  width: 150px;
 }
 
 .header__container {
@@ -9,7 +9,7 @@
 }
 
 .header__container-title {
-  font-size: 5vw;
+  font-size: 50px;
   margin: 0;
   color: #066d77;
   font-family: "Michroma", sans-serif;
@@ -17,21 +17,21 @@
 
 .header__container-description {
   margin: 5px 0 10px 0;
-  font-size: 4vw;
+  font-size: 45px;
   color: #83c5be;
   font-family: "Michroma", sans-serif;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
   .header__logo {
-    width: 10vw;
+    width: 100px;
   }
 
   .header__container-title {
-    font-size: 3vw;
+    font-size: 24px;
   }
 
   .header__container-description {
-    font-size: 2vw;
+    font-size: 16px;
   }
 }

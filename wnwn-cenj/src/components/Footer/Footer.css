@@ -1,8 +1,7 @@
 .footer {
-  height: 100%;
-  background-color: #edf6f9;
+  background-color: rgb(220, 225, 224);
   font-family: "Michroma", sans-serif;
-  font-size: 2vw;
+  font-size: 16px;
 }
 
 .footer__names {

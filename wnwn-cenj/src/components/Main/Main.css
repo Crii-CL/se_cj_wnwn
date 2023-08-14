@@ -1,8 +1,7 @@
 .main {
   display: flex;
   flex-flow: column wrap;
-  background-color: whitesmoke;
-  box-sizing: border-box;
+  background-color: rgb(224, 231, 230);
   padding: 50px 20px 0 20px;
   margin: 0;
 }

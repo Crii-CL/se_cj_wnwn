@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ResourceCenter.css";
 
 const ResourceCenter = () => {
   const resources = [
     {
-      title: "What is an E-waste Center?",
+      title: "What is an E-Waste Center?",
       content:
-        "An E-waste Center is a facility dedicated to handling electronic waste, like old computers and phones, in an environmentally conscious way. It sorts, dismantles, and processes discarded electronics, aiming to minimize their negative impact on the environment. E-waste Centers collaborate with recycling firms and authorities to ensure safe disposal and resource recovery from these devices.",
+        "An E-Waste Center is a facility dedicated to handling electronic waste, like old computers and phones, in an environmentally conscious way. It sorts, dismantles, and processes discarded electronics, aiming to minimize their negative impact on the environment. E-Waste Centers collaborate with recycling firms and authorities to ensure safe disposal and resource recovery from these devices.",
     },
     {
       title: "What Exactly is Recycling?",
@@ -16,7 +16,7 @@ const ResourceCenter = () => {
     {
       title: "How to Dispose of Electronics",
       content:
-        "To dispose of electronics properly, check if the device can be repaired, refurbished, or donated. Non-functional items should be taken to E-waste Centers or certified recycling facilities. Erase personal data, follow packaging guidelines, and explore take-back programs from manufacturers or retailers if no nearby center is available. Responsible electronics disposal helps cut waste and supports resource recovery.",
+        "To dispose of electronics properly, check if the device can be repaired, refurbished, or donated. Non-functional items should be taken to E-Waste Centers or certified recycling facilities. Erase personal data, follow packaging guidelines, and explore take-back programs from manufacturers or retailers if no nearby center is available. Responsible electronics disposal helps cut waste and supports resource recovery.",
     },
     {
       title: "How to Dispose of Home Hazardous Waste",
@@ -35,6 +35,28 @@ const ResourceCenter = () => {
     setSelectedResource(null);
   };
 
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    };
+
+    const handleOverlayClick = (e) => {
+      if (e.target.classList.contains("modal_opened")) {
+        closeModal();
+      }
+    };
+
+    document.addEventListener("keydown", handleEsc);
+    document.addEventListener("click", handleOverlayClick);
+
+    return () => {
+      document.removeEventListener("keydown", handleEsc);
+      document.removeEventListener("click", handleOverlayClick);
+    };
+  }, []);
+
   return (
     <section className="resource">
       <h1 className="resource__title">Resource Center</h1>
@@ -50,7 +72,7 @@ const ResourceCenter = () => {
         ))}
       </div>
       {selectedResource && (
-        <div className="modal">
+        <div className={`modal ${selectedResource ? "modal_opened" : ""}  `}>
           <div className="modal__content">
             <h2 className="modal__title">{selectedResource.title}</h2>
             <p className="modal__description">{selectedResource.content}</p>
