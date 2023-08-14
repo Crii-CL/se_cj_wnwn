@@ -9,7 +9,6 @@
 }
 
 .header__container-title {
-  /* font-size: 44px; */
   font-size: 5vw;
   margin: 0;
   color: #066d77;
@@ -19,7 +18,6 @@
 .header__container-description {
   margin: 5px 0 10px 0;
   font-size: 4vw;
-  /* font-size: 24px; */
   color: #83c5be;
   font-family: "Michroma", sans-serif;
 }

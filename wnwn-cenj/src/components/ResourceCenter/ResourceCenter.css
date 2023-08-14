@@ -1,13 +1,39 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleDown {
+  from {
+    transform: scale(105%);
+  }
+  to {
+    transform: scale(100%);
+  }
+}
+
 .resource {
   height: 50vh;
+  font-family: "Michroma", sans-serif;
+  border-bottom: 2px #000;
+}
+
+.resource__title {
+  color: #282c34;
+  font-size: 4vw;
+  margin-top: 20px;
 }
 
 .resource__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
   gap: 20px;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .resource__card {
@@ -23,6 +49,32 @@
   height: 35vh;
   box-sizing: border-box;
   position: relative;
+  background-blend-mode: darken;
+  background: var(--gradient-color-1);
+  transition: ease-out 0.3s;
+}
+
+.resource__card:hover {
+  transform: scale(105%);
+}
+
+:root {
+  --gradient-color-1: linear-gradient(45deg, #4c54c0, #389488);
+  --gradient-color-2: linear-gradient(45deg, #85e99e, #27eef1);
+  --gradient-color-3: linear-gradient(45deg, #d7e4ba, #d6e225);
+  --gradient-color-4: linear-gradient(45deg, #f5f7f1, #a0288c);
+}
+
+.resource__card:nth-child(2) {
+  background: var(--gradient-color-2);
+}
+
+.resource__card:nth-child(3) {
+  background: var(--gradient-color-3);
+}
+
+.resource__card:nth-child(4) {
+  background: var(--gradient-color-4);
 }
 
 .resource__image {
@@ -36,13 +88,13 @@
 }
 
 .resource__card-title {
+  color: #282c34;
   margin: 0;
-  font-size: 16px;
+  font-size: 2vw;
   padding: 10px;
-  background-color: #f5f5f5;
-  border-bottom: 1px solid #ccc;
   margin-bottom: 5px;
   position: relative;
+  font-family: "Michroma", sans-serif;
 }
 
 .modal {
@@ -55,24 +107,27 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .modal__content {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  max-width: 80%;
+  max-width: 65%;
+  max-height: 50%;
   z-index: 3;
+  line-height: 1.2;
 }
 
 .modal__title {
+  font-size: 3vw;
   margin-top: 0;
-  font-size: 24px;
 }
 
 .modal__description {
   margin: 10px 0;
-  font-size: 16px;
+  font-size: 2vw;
 }
 
 .modal__close-button {
@@ -81,6 +136,16 @@
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1400px) {
+  .modal__title {
+    font-size: 30px;
+  }
+
+  .modal__description {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -92,5 +157,8 @@
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
+  }
+  .resource__card-title {
+    font-size: 5vw;
   }
 }
