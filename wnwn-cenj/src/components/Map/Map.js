@@ -2,12 +2,12 @@ import "./Map.css";
 import { constants } from "../../utils/constants";
 import React, { useState, useEffect } from "react";
 
-const Map = (props) => {
+const Map = ({ address, setPin, notFound, setNotFound }) => {
   const [src, setSrc] = useState("");
 
   useEffect(() => {
     const geocoderUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
-      props.address
+      address
     )}&key=${constants.apiKey}`;
 
     fetch(geocoderUrl)
@@ -15,24 +15,24 @@ const Map = (props) => {
       .then((data) => {
         if (data.results && data.results.length > 0) {
           const embedUrl = `https://www.google.com/maps/embed/v1/search?q=+recycling+centers+${encodeURIComponent(
-            props.address
+            address
           )}&key=${constants.apiKey}`;
 
           setSrc(embedUrl);
 
-          props.setNotFound(false);
+          setNotFound(false);
         } else if (data.results && data.results.length === 0) {
-          props.setNotFound(true);
+          setNotFound(true);
         }
       })
       .catch((err) => {
         console.error("Requested resource not found", err);
       });
-  }, [props.address]);
+  }, [address]);
 
   return (
     <>
-      {!props.notFound ? (
+      {!notFound ? (
         <iframe
           id="map"
           className="map__iframe"

@@ -18,13 +18,14 @@
 
 .resource {
   height: 600px;
-  font-family: "Michroma", sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 .resource__title {
   color: #066d77;
   font-size: 45px;
   margin: 10px 0 10px 0;
+  font-family: "Archivo Black", sans-serif;
 }
 
 .resource__cards {
@@ -52,6 +53,16 @@
   background-blend-mode: darken;
   background: var(--gradient-color-1);
   transition: ease-out 0.3s;
+}
+
+.resource__card-title {
+  color: #282c34;
+  margin: 0;
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 5px;
+  position: relative;
+  font-family: "Archivo Black", sans-serif;
 }
 
 .resource__card:hover {
@@ -85,16 +96,6 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
-}
-
-.resource__card-title {
-  color: #282c34;
-  margin: 0;
-  font-size: 24px;
-  padding: 10px;
-  margin-bottom: 5px;
-  position: relative;
-  font-family: "Michroma", sans-serif;
 }
 
 .modal {

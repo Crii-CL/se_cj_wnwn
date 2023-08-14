@@ -16,7 +16,7 @@ const ResourceCenter = () => {
     {
       title: "How to Dispose of Electronics",
       content:
-        "To dispose of electronics properly, check if the device can be repaired, refurbished, or donated. Non-functional items should be taken to E-Waste Centers or certified recycling facilities. Erase personal data, follow packaging guidelines, and explore take-back programs from manufacturers or retailers if no nearby center is available. Responsible electronics disposal helps cut waste and supports resource recovery.",
+        "To Dispose of electronics properly, check if the device can be repaired, refurbished, or donated. Non-functional items should be taken to E-Waste Centers or certified recycling facilities. Erase personal data, follow packaging guidelines, and explore take-back programs from manufacturers or retailers if no nearby center is available. Responsible electronics disposal helps cut waste and supports resource recovery.",
     },
     {
       title: "How to Dispose of Home Hazardous Waste",

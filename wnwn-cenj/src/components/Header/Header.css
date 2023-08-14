@@ -12,14 +12,14 @@
   font-size: 50px;
   margin: 0;
   color: #066d77;
-  font-family: "Michroma", sans-serif;
+  font-family: "Archivo Black", sans-serif;
 }
 
 .header__container-description {
   margin: 5px 0 10px 0;
   font-size: 45px;
   color: #83c5be;
-  font-family: "Michroma", sans-serif;
+  font-family: "Archivo Black", sans-serif;
 }
 
 @media screen and (max-width: 800px) {

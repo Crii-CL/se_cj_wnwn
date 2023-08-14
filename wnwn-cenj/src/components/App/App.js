@@ -3,6 +3,7 @@ import Footer from "../Footer/Footer";
 import Main from "../Main/Main";
 import Home from "../Home/Home";
 import { useState } from "react";
+import "../../vendor/fonts.css";
 
 export default function App() {
   const [isLocated, setIsLocated] = useState(false);

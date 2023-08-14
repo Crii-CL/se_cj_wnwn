@@ -1,6 +1,2 @@
-@font-face {
-  font-family: "Michroma", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  src: url("./fonts/Michroma-Regular.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
