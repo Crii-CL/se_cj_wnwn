@@ -14,7 +14,7 @@ const Map = (props) => {
       .then((res) => res.json())
       .then((data) => {
         if (data.results && data.results.length > 0) {
-          const embedUrl = `https://www.google.com/maps/embed/v1/search?q=ewaste+recycling+${encodeURIComponent(
+          const embedUrl = `https://www.google.com/maps/embed/v1/search?q=+recycling+centers+${encodeURIComponent(
             props.address
           )}&key=${constants.apiKey}`;
 
