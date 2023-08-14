@@ -22,7 +22,6 @@
 }
 
 .resource__title {
-  color: rgb(35, 34, 34);
   font-size: 45px;
   margin: 40px 0 40px 0;
   font-family: "Archivo Black", sans-serif;
@@ -68,13 +67,6 @@
 
 .resource__card:hover {
   transform: scale(102%);
-}
-
-:root {
-  --gradient-color-1: linear-gradient(45deg, #edf6f9, #066d77);
-  --gradient-color-2: linear-gradient(45deg, #edf6f9, #ffddd2);
-  --gradient-color-3: linear-gradient(45deg, #edf6f9, #83c5be);
-  --gradient-color-4: linear-gradient(45deg, #edf6f9, #e29578);
 }
 
 .resource__card:nth-child(2) {
@@ -146,6 +138,13 @@
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+:root {
+  --gradient-color-1: linear-gradient(45deg, #edf6f9, #066d77);
+  --gradient-color-2: linear-gradient(45deg, #edf6f9, #ffddd2);
+  --gradient-color-3: linear-gradient(45deg, #edf6f9, #83c5be);
+  --gradient-color-4: linear-gradient(45deg, #edf6f9, #e29578);
 }
 
 @media screen and (min-width: 1400px) {
