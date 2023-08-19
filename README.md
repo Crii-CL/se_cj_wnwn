@@ -4,6 +4,8 @@ This project was booted strapped with [Create React App](https://github.com/Crii
 
 Project Figma Design - https://www.figma.com/file/kEttNON3HXQzXeBWEujJFV/August-2023-CodeJam?type=design&node-id=0-1&mode=design&t=RGaJU3ewCDzkHFf3-0
 
+View page [here](https://crii-cl.github.io/se_cj_wnwn/)
+
 ## About the project
 
 The idea of the application is pretty simple - we make a call to an API, which then responds with the nearby recycling centers. We collect the user's location, process it, and then based on the location, we provide nearby recycling centers to the user.
