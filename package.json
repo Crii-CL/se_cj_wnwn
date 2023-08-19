@@ -3,15 +3,18 @@
   "version": "1.0.0",
   "description": "Simple application that lists recycling centers in your area of choice.",
   "main": "index.js",
+  "homepage": "https://crii-cl.github.io/se_project_wnwn",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
