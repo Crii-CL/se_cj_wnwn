@@ -1,18 +1,32 @@
 {
   "name": "se_cj_wnwn",
   "version": "1.0.0",
-  "description": "Simple application that lists local recycling centers in your area.",
+  "description": "Simple application that lists recycling centers in your area of choice.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "google-maps-react": "^2.0.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^3.4.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
