@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Simple application that lists recycling centers in your area of choice.",
   "main": "index.js",
-  "homepage": "https://crii-cl.github.io/se_project_wnwn",
+  "homepage": "https://crii-cl.github.io/se_project_wnwn/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
