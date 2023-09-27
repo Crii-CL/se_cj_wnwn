@@ -1,6 +1,6 @@
 # Waste Not What Not Recycling Center App
 
-This project was booted strapped with [Create React App](https://github.com/Crii-CL/se_cj_wnwn).
+This project was boot strapped with [Create React App](https://github.com/Crii-CL/se_cj_wnwn).
 
 Project Figma Design - https://www.figma.com/file/kEttNON3HXQzXeBWEujJFV/August-2023-CodeJam?type=design&node-id=0-1&mode=design&t=RGaJU3ewCDzkHFf3-0
 
